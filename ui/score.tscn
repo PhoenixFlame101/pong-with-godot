@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://ui/score.gd" type="Script" id=1]
+[ext_resource path="res://ARIALBD.TTF" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 20
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 2 )
+
+[node name="Interface" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 3.0
+margin_top = 3.0
+margin_right = 116.0
+margin_bottom = 31.0
+custom_fonts/normal_font = SubResource( 1 )
+text = "Score: 100"
+scroll_active = false
+script = ExtResource( 1 )
