@@ -1,6 +1,6 @@
 extends Area2D
 
-export var DEFAULT_SPEED = 235
+export var DEFAULT_SPEED = 255
 
 var _speed = DEFAULT_SPEED
 var direction = Vector2.LEFT
@@ -9,7 +9,7 @@ var death_count = 0
 onready var _initial_pos = position
 
 func _process(delta):
-	_speed += delta * 2.4
+	_speed += delta *2
 	position += _speed * delta * direction
 
 
