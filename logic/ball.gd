@@ -1,6 +1,7 @@
 extends Area2D
 
-export var DEFAULT_SPEED = 500
+
+export var DEFAULT_SPEED = 350
 
 var _speed = DEFAULT_SPEED
 var direction = Vector2.LEFT
