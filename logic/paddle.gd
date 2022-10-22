@@ -1,6 +1,6 @@
 extends Area2D
 
-const MOVE_SPEED = 255
+const MOVE_SPEED = 300
 
 var _ball_dir
 var _up

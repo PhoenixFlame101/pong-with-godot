@@ -1,6 +1,7 @@
 extends Area2D
 
-export var DEFAULT_SPEED = 255
+
+export var DEFAULT_SPEED = 350
 
 var _speed = DEFAULT_SPEED
 var direction = Vector2.LEFT
@@ -15,7 +16,10 @@ func _process(delta):
 
 func reset():
 	if true: #if Input.is_action_just_pressed("ui_accept"):
-		direction = Vector2.LEFT
+		if direction == Vector2.LEFT:
+			direction = Vector2.RIGHT 
+		elif direction == Vector2.RIGHT:
+			direction = Vector2.LEFT 
 		position = _initial_pos
 		_speed = DEFAULT_SPEED
 		global.score = 0
