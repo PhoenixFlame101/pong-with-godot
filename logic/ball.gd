@@ -8,6 +8,7 @@ onready var _initial_pos = position
 func _process(delta):
 	global.ball_speed += delta * 2
 	position += global.ball_speed * delta * global.ball_direction
+	global.ball_pos = position
 
 
 func reset():
