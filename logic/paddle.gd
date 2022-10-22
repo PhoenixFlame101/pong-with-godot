@@ -21,9 +21,9 @@ func _ready():
 
 func _process(delta):
 	# Move up and down based on input.S
-	if n == "right":
+	if n == "left":
 		var input = Input.get_action_strength(_down) - Input.get_action_strength(_up)
-		# position.y = clamp(position.y + _ball_dir * MOVE_SPEED * delta ,16,_screen_size_y - 16)
+		#position.y = clamp(position.y + _ball_dir * MOVE_SPEED * delta ,16,_screen_size_y - 16)
 		position.y = clamp(position.y + input * MOVE_SPEED * delta, 16, _screen_size_y - 16)
 
 

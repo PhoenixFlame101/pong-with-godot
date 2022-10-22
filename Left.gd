@@ -29,18 +29,12 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	#var x_pos = (global.ball_direction[0] / _screen_size_x)*2 - 1
 	var y_pos = (float(global.ball_direction[1]) / (float(_screen_size_y) *0.5))- 1
-	#print("BALLY: " + String(global.ball_direction[1]) + " SCREENY: " + String(_screen_size_y) 
-	#+ " A/B: " + String((float(global.ball_direction[1]) / float((_screen_size_y *0.5)))))
-	#print(" FLOAT BALLY: " + String(float(global.ball_direction[1])) + " SCREENFLOAT: " + String(float(_screen_size_y)))
-	#print(y_pos)
-	print(global.ball_pos)
-	print(Vector2.LEFT)
-	print((Vector2.LEFT * 2).x)
-	print(global.ball_pos[1])
+	#print(global.ball_pos)
+	#print(Vector2.LEFT)
+	#print((Vector2.LEFT * 2).x)
+	#print(global.ball_pos[1])
 	position.y = global.ball_pos[1]
-	#position.y = clamp(position.y + 0 * MOVE_SPEED * delta, 16, _screen_size_y - 16)
 
 func _on_area_entered(area):
 	if area.name == "Ball":
