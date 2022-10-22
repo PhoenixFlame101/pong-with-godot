@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://logic/paddle.gd" type="Script" id=1]
 [ext_resource path="res://paddle.png" type="Texture" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://separator.png" type="Texture" id=6]
 [ext_resource path="res://logic/wall.gd" type="Script" id=7]
 [ext_resource path="res://logic/ceiling_floor.gd" type="Script" id=8]
+[ext_resource path="res://Left.gd" type="Script" id=9]
 
 [sub_resource type="Gradient" id=5]
 offsets = PoolRealArray( 1.02857e-38, 1 )
@@ -41,7 +42,7 @@ expand = true
 [node name="Left" type="Area2D" parent="."]
 position = Vector2( 65, 200 )
 scale = Vector2( 1, 1.5 )
-script = ExtResource( 1 )
+script = ExtResource( 9 )
 
 [node name="Sprite" type="Sprite" parent="Left"]
 texture = ExtResource( 2 )
